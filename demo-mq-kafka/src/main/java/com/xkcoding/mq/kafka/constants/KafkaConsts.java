@@ -18,4 +18,6 @@ public interface KafkaConsts {
      * Topic 名称
      */
     String TOPIC_TEST = "test";
+
+    String TOPIC_OUTPUT = "output";
 }

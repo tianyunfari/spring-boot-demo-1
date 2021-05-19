@@ -19,7 +19,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class MessageHandler {
 
-    @KafkaListener(topics = KafkaConsts.TOPIC_TEST, containerFactory = "ackContainerFactory")
+    @KafkaListener(topics = KafkaConsts.TOPIC_OUTPUT, containerFactory = "ackContainerFactory")
     public void handleMessage(ConsumerRecord record, Acknowledgment acknowledgment) {
         try {
             String message = (String) record.value();
