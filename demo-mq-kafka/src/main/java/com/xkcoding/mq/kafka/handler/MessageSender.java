@@ -16,6 +16,7 @@ public class MessageSender {
     @Autowired
     private KafkaTemplate<String, String> kafkaTemplate;
 
+    // git操作测试
     private void  send(String topic, String message) {
         kafkaTemplate.send(topic, message);
     }
